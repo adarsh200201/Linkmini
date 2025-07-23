@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Code Not Found - Linkmini</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(-45deg, #667eea, #764ba2, #667eea, #764ba2);
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .bounce-in {
+            animation: bounceIn 1s ease-out;
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            70% { transform: scale(0.9); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen flex items-center justify-center">
+    <div class="max-w-2xl mx-auto text-center text-white px-6">
+        <!-- Logo -->
+        <div class="flex items-center justify-center space-x-2 mb-8">
+            <div class="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-lg rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-xl">L</span>
+            </div>
+            <span class="font-bold text-3xl">Linkmini</span>
+        </div>
+        
+        <!-- 404 Icon -->
+        <div class="text-8xl mb-6 float">🔍</div>
+        
+        <!-- Error Message -->
+        <div class="bounce-in">
+            <h1 class="text-4xl font-bold mb-4">Short Code Not Found</h1>
+            <p class="text-xl mb-8 opacity-90">
+                The shortened URL you're looking for doesn't exist or may have expired.
+            </p>
+            
+            <!-- Suggestions -->
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6 mb-8">
+                <h2 class="text-lg font-semibold mb-4">What you can do:</h2>
+                <ul class="text-left space-y-2">
+                    <li class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        Check if the URL was typed correctly
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        Try the original long URL if you have it
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        Contact the person who shared this link
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        Create a new shortened URL below
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="space-y-4">
+                <a href="/" 
+                   class="inline-block bg-white text-purple-600 font-semibold py-4 px-8 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    🏠 Go to Homepage
+                </a>
+                <br>
+                <a href="/#shortener" 
+                   class="inline-block bg-purple-600 bg-opacity-80 backdrop-blur-lg text-white font-semibold py-3 px-6 rounded-lg transform hover:scale-105 transition-all duration-300 border border-white border-opacity-20">
+                    🔗 Create New Short URL
+                </a>
+            </div>
+        </div>
+        
+        <!-- Additional Info -->
+        <div class="mt-12 text-sm opacity-75">
+            <p>If you believe this is an error, please contact our support team.</p>
+            <p class="mt-2">© 2025 G-INITIATONS ESERVICES PRIVATE LIMITED</p>
+        </div>
+    </div>
+</body>
+</html>
